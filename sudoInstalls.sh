@@ -23,11 +23,11 @@ pacman -S adobe-source-code-pro-fonts --noconfirm --needed
 pacman -S python-pip --noconfirm --needed
 pip install i3ipc
 pacman -S powerline powerline-fonts texlive-most dunst openssh --noconfirm --needed
-useradd -m -g wheel -s /usr/bin/zsh tbrooks
-wget https://raw.githubusercontent.com/trevorlbrooks/arch-install/master/tempSudo
+useradd -m -g wheel -s /usr/bin/zsh vfoley
+wget https://raw.githubusercontent.com/vfoley/arch-install/master/tempSudo
 cp tempSudo /etc/sudoers.d/tempSudo
 chmod 0440 /etc/sudoers.d/tempSudo
-su tbrooks -c sh -c "$(curl -fsSL https://raw.githubusercontent.com/trevorlbrooks/arch-install/master/userInstalls.sh)"
+su vfoley -c sh -c "$(curl -fsSL https://raw.githubusercontent.com/vfoley/arch-install/master/userInstalls.sh)"
 rm /etc/sudoers.d/tempSudo
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers.d/wheel
 chmod 0440 /etc/sudoers.d/wheel
