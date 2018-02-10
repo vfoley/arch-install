@@ -8,7 +8,7 @@ echo "archvm" >> /etc/hostname
 pacman -Syu
 pacman -S wicd grub --noconfirm --needed
 mkdir /esp
-mount /dev/sdd1 /esp
+mount /dev/sda1 /esp
 grub-install --target=x86_64-efi --efi-directory=/esp --bootloader-id=arch
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable wicd
