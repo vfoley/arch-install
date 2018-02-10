@@ -10,7 +10,7 @@
     makepkg -si
     cd ..
     cd ..
-    rm -r tmp
+    rm -rf tmp
     yaourt -S polybar
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     mkdir .config/rofi
