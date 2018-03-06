@@ -27,6 +27,7 @@
     yaourt -S texworks 
     mkdir .config
     mkdir .config/i3
+    mkdir .config/i3status
     mkdir .config/termite
     mkdir .config/rofi
     mkdir .config/dunst
@@ -35,6 +36,7 @@
     ln -s ~/projects/dotfiles/.bash_profile .bash_profile
     ln -s ~/projects/dotfiles/.tmux.conf .tmux.conf
     ln -s ~/projects/dotfiles/.config/i3/config .config/i3/config
+    ln -s ~/projects/dotfiles/.config/i3status/i3status.conf .config/i3status/i3status.conf
     ln -s ~/projects/dotfiles/.config/termite/config .config/termite/config
     ln -s ~/projects/dotfiles/.config/polybar .config/polybar
     ln -s ~/projects/dotfiles/.config/rofi/config .config/rofi/config
