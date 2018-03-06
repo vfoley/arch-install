@@ -16,7 +16,7 @@
     mkdir .config/rofi
     mkdir projects
     cd projects
-    git clone https://github.com/trevorlbrooks/dotfiles
+    git clone https://github.com/vfoley/dotfiles
     cd
     ln -s ~/projects/dotfiles/.vimrc .vimrc
     mkdir .vim
