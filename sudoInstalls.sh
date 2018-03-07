@@ -3,7 +3,7 @@ hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
-echo "archvm" >> /etc/hostname
+echo "v-arch-one" >> /etc/hostname
 
 pacman -Syu
 pacman -S wicd grub --noconfirm --needed
