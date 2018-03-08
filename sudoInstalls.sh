@@ -2,11 +2,12 @@ ln -sf /usr/share/zoneinfo/America/Denver /etc/localtime
 hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
+localetcl set-locale LANG=en_US.UTF-8
 
 echo "v-arch-one" >> /etc/hostname
 
 pacman -Syu
-pacman -S wicd grub --noconfirm --needed
+pacman -S wicd grub efibootmgr --noconfirm --needed
 mkdir /esp
 mount /dev/sda1 /esp
 grub-install --target=x86_64-efi --efi-directory=/esp --bootloader-id=arch
